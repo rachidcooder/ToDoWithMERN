@@ -20,7 +20,7 @@ function addItem({onClose}) {
 
           if(res.data){ 
 
-            setTasck(...tasks,res.data.taskTopic);
+          //  setTasks(...tasks,res.data.taskTopic);
             onClose();     
             
           }

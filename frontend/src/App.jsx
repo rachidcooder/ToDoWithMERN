@@ -5,8 +5,8 @@ import Item from "./component/items";
 import AddItem from './component/addItem';
 
 function App() {
-  const [count, setCount] = useState(0)
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
+
 
  
   const currentTimeMillis = Date.now();

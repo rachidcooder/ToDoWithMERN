@@ -5,7 +5,7 @@ import { todoState } from '../context/TodoProvider';
 function updateItem({taskItem,onclose}) {
 
   const{tasks}=todoState();
-  const{setTodostate}=todoState()
+  const{setTasks}=todoState();
   const [task,setTasck] =useState("");
   const [time,setTime]=useState("")
  
@@ -20,9 +20,7 @@ function updateItem({taskItem,onclose}) {
          try{
           const res = await axios.put(`http://localhost:5000/api/todo/update/${taskItem._id}`,{task,time});
           if(res){
-            //this is sheet code ! hahaha 
-            setTasck(...tasks);
-                //window.location.reload();
+           // setTasks(...tasks);  
             onclose();
           }
 

@@ -7,7 +7,7 @@ import { todoState } from '../context/TodoProvider'
 
 function item() {
   const{tasks}=todoState();
-  const{setTasks}=todoState()
+  const{setTasks}=todoState();
   const[lstasks,setLsTasks] =useState([])
   const[taskToUpdate,setTasktoUpdate]=useState([])
   const[isupdate,setIsupadate] = useState(false);
@@ -56,10 +56,10 @@ function item() {
 <div className='overflow-y-scroll scroll-smooth  scrollbar scrollbar-thumb-2px'> 
 
  { tasks &&
-  tasks.map((task,i)=>{
+    tasks.map((task,i)=>{
 
-    return(
-    <div key={task._id}
+     return(
+     <div key={task._id}
      className='flex  flex-col justify-center items-center h-16 font-bold bg-slate-50 m-2
          hover:bg-slate-200 drop-shadow-xl rounded-lg'>
                     <h1 className='text-lg'>{task.time}</h1>
@@ -78,7 +78,7 @@ function item() {
             </div>
     
       </div>) 
-  })
+   })
      }
        
     { isupdate && <UpdateItem taskItem={taskToUpdate} onclose={onClose}/>}
