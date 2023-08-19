@@ -15,10 +15,6 @@ connectDB();
  app.use("/api/todo",route)
 
 // -----------------deployment--------------------------
-const _dirname=path.resolve() ;
-  if(process.env.NODE_ENV==="production"){
-    
-  }
 
 // -----------------deployment--------------------------
 
