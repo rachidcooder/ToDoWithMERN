@@ -18,7 +18,6 @@ connectDB();
  app.use("/api/todo",route)
 
  // --------------------------deployment------------------------------
-
 const __dirname1 = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
@@ -29,10 +28,10 @@ if (process.env.NODE_ENV === "production") {
   );
 } else {
   app.get("/", (req, res) => {
-    res.send("API is running..");
-  });
-}
+    res.send("API is running..")}
+  )
 
+}
 // --------------------------deployment------------------------------
 
  app.listen(PORT,()=>{
