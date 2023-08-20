@@ -7,7 +7,7 @@
   "scripts": {
    "start": "nodemon backend/app.js",
       "server": "nodemon backend/.js",
-    "build": "npm install && npm --prefix frontend run build && npm --prefix backend run build"
+    "build": "npm install && npm --prefix frontend run build &&  run build"
   },
   "repository": {
     "type": "git",
