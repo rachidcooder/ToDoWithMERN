@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+    "type": "module",
   "scripts": {
    "start": "nodemon backend/app.js",
       "server": "nodemon backend/.js",
@@ -14,9 +15,11 @@
   },
   "author": "",
   "license": "ISC",
+  
   "bugs": {
     "url": "https://github.com/rachidcooder/ToDoWithMERN/issues"
   },
+  
   "homepage": "https://github.com/rachidcooder/ToDoWithMERN#readme",
   "dependencies": {
     "cors": "^2.8.5",
