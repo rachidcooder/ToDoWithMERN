@@ -14,9 +14,10 @@ Persistent storage ( MngoDB).
 
 Prerequisites:
        Node.js and npm (or yarn) installed on your system.
+       
 Installation:
-        Clone the repository: git clone https://github.com/your-username/todo-list-app.git
-Navigate to the project directory: cd Todo_List (clent/server )
+        Clone the repository: git clone https://github.com/rachidcooder/ToDoWithMERN.git
+     Navigate to the project directory: cd Todo_List (clent/server )
       Install dependencies: npm install (or yarn install)
 Running the App 
 Start the development server: npm start (or yarn start)
